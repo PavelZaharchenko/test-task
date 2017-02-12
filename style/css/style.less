@@ -1,0 +1,28 @@
+@import url(header.less);
+@import url(main.less);
+@import url(footer.less);
+@import url(mixin.less);
+@import url(reset.css);
+
+body {
+	background-color: @colorBody;
+}
+
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	@media screen and (max-width: 768px) {
+		overflow-x: hidden;
+	}
+}
+
+

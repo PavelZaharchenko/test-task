@@ -1,0 +1,126 @@
+.page-footer {
+	padding: 50px; 
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	background: url(../img/bitmap.png) @colorLogo;
+}
+
+.page-footer__download-block {
+	display: flex;
+    justify-content: center;
+    img {
+    	width: 40px;
+    	height: 54px;
+    	display: block;
+    	margin: 0 auto 20px;
+    }
+    a {
+    	margin-top: 30px;
+    	width: 100%;
+    	font-size: 14px;
+    	text-align: center;
+    	color: @colorWhite;
+    	text-decoration: underline;
+    }
+}
+.page-footer__input-block {
+	border-right: 1px solid @colorFooterBorder;
+	border-left: 1px solid @colorFooterBorder;
+	padding: 0 20px;
+	h1 {
+		font-size: 18px;
+		color: @colorWhite;
+		margin-bottom: 20px;
+	}
+}
+form {
+	font-size: 0;
+}
+input[type="text"] {
+	border-style: none;
+	padding: 10px;
+	width: 70%; 
+	font-size: 14px;
+	color: @colorInputText
+}
+input[type="submit"] {
+	padding: 10px; 
+	background-color: red;
+	border-style: none;
+	color: @colorWhite;
+	font-size: 14px;
+	width: 30%;
+}
+
+.page-footer__list-block {
+	h1 {
+		color: @colorWhite;
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+} 
+
+.nav-list__item {
+	a {
+		color: @colorWhite;
+		text-decoration: underline;
+		line-height: 1.5;
+	}
+}
+
+
+// Mediaqueries
+
+// For mobile
+@media screen and (max-width: 768px) {
+	.page-footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.page-footer__download-block {
+		margin-bottom: 30px;
+	}
+	.page-footer__input-block {
+		border-top: 1px solid @colorFooterBorder;
+		border-bottom: 1px solid @colorFooterBorder;
+		text-align: center;
+		border-right: none;
+		border-left: none;
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+	.page-footer__list-block {
+		text-align: center;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+	.page-footer {
+		 flex-direction: column;
+		 justify-content: center;
+	}
+	.footer-download_block{
+		margin-bottom: 30px;
+	}
+	.footer-input_block {
+		border-top: 1px solid @colorFooterBorder;
+		border-bottom: 1px solid @colorFooterBorder;
+		border-right: none;
+		border-left: none;
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+	.input_block-title {
+		text-align: center;
+	}
+	.footer-list_block {
+		text-align: center;
+	}
+
+}
+ 

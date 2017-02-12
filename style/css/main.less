@@ -1,0 +1,348 @@
+.section-1 {
+	background-color: @colorWhite;
+	padding-top: 240px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: url(../img/bitmap-copy-4.png) top left no-repeat;
+	padding-bottom: 100px;
+}
+.section-1__main-logo {
+	width: 480px;
+	height: 166px;
+	background-image: url(../img/logo.png);
+	background-size: 100% 100%; 
+}
+.section-1__main-description {
+	width: 723px;
+	font-size: 36px;
+	margin-top: 40px;
+	text-align: center;
+	color: @colorSeaBlue;
+}
+.black-text {
+	font-size: 12px;
+	color: @colorGreyText;
+	margin-top: 10px;
+}
+.section-2__title {
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-image: url(../img/bitmap.png), linear-gradient( to right, @colorGradient, @colorLogo);
+	box-shadow: 1px 50px 59px -29px rgba(111,11,75,0.56);
+	position: relative;
+}
+.section-2__sub-title {
+	font-size: 24px;
+	text-align: center;
+	padding: 0 100px;
+	color: @colorWhite;
+	font-weight: bold;
+	line-height: 30px;
+}
+.section-2__description {
+	margin-top: 15px;
+   	padding: 0 70px;
+	font-size: 18px;
+	color: @colorWhite;
+	text-align: center;
+	line-height: 26px;
+}
+.section-2__flying-molecule {
+	width: 173px;
+	height: 140px;
+	background-size: 100% 100%; 
+	position: absolute;
+	background-image: url(../img/bitmap-copy-5.png);
+	top: -52px;
+    left: -60px;
+}
+.section-2__content {
+	padding: 0 50px;
+}
+// First block section 2
+.first-block {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.first-block__description {
+	width: 540px;
+	font-size: 18px;
+}
+.first-block__logo {
+	background-size: 100% 100%;
+}
+
+// Second block section 2
+.second-block {
+	width: 100%;
+	margin-top: 100px;
+	display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, @colorGradient, @colorLogo);
+	box-shadow: 1px 50px 59px -29px rgba(74,74,74,1);
+	color: @colorWhite;
+	text-align: center;
+	padding: 50px 100px;
+	line-height: 26px;
+}
+
+// Third block section 2
+
+.third-block {
+	margin-top: 100px;
+	width: 100%;
+	background: url(../img/bitmap.png) @colorLogo;
+	padding: 35px 50px;
+	line-height: 1.5;
+	display: flex;
+}
+.third-block__title {
+	font-size: 18px;
+	font-weight: bold;
+	color: @colorWhite;
+	text-transform: uppercase;
+}
+.third-block__description {
+	font-size: 18px;
+	color: @colorWhite;
+}
+.third-block__logo {
+	margin-right: 50px;
+}
+.third-block__list {
+	list-style-type: disc;
+	color: @colorWhite;
+	padding-left: 20px;
+}
+
+
+// Section 3
+.section-3__title {
+	margin-top: 100px;
+	width: 100%;
+	padding: 50px; 
+	background: url(../img/bitmap.png), linear-gradient( to right, #31a8d4, #188fba);
+	position: relative;
+}
+.section-3__title-molecule1 {
+	width: 173px;
+	height: 140px;
+	position: absolute;
+	background-image: url(../img/bitmap-copy-5.png);
+	background-size: 100% 100%;
+	top: -50px;
+	right: -60px;
+}
+.section-3__title-molecule2 {
+	width: 271px;
+	height: 224px;
+	position: absolute;
+	background-image: url(../img/hero-molecule.png);
+	background-size: 100% 100%;
+	top: 120px;
+	right: -130px;
+}
+.section-3__title-molecule3 {
+	width: 208px;
+	height: 169px;
+	position: absolute;
+	background-image: url(../img/bitmap-copy-6.png);
+	background-size: 100% 100%;
+	top: 25px;
+	left: -85px;
+}
+.section-3__title-logo {
+	width: 224px;
+	height: 24px;
+	background-size: 100% 100%;
+	background-image: url(../img/monograph.png);
+	margin: auto; 
+}
+.section-3__title-logo--company {
+	width: 448px;
+	height: 125px;
+	background-image: url(../img/page-1.png);
+}
+.section-3__content {
+	margin-top: 100px;
+	padding: 0 30px;
+}
+.section-list__item {
+	display: flex;
+  	align-items: center;
+  	padding: 30px;
+  	border-bottom: 1px solid @colorborder;
+  	img {
+  		margin-right: 10px;
+	}
+}
+.section-list__item-title {
+	font-size: 14px;
+	color: @colorSeaBlue;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	width: 25%;
+	img {
+	  	margin-right: 10px;
+	}
+}
+
+// Mediaqueries
+
+// For mobile
+@media screen and (max-width: 768px) {
+	.section-1{
+		padding-top: 150px;
+		padding-bottom: 50px;
+		background: url(../img/bitmap-copy-4.png) top left no-repeat;
+		background-size: 60% 50%;
+		position: relative;
+		&:before {
+			content: '';
+			width: 173px;
+			height: 140px;
+			position: absolute;
+			right: -70px;
+    		top: 0;
+			background:  url(../img/bitmap-copy-5.png);
+		}
+		&:after {
+			content: '';
+			width: 150px;
+			height: 101px;
+			position: absolute;
+		    right: 8px;
+    		bottom: -60px;
+    		transform: rotate(157deg);
+			background:  url(../img/mob.png);
+		}
+	}
+	.section-1__main-logo {
+	    width: 200px;
+    	height: 75px;
+	}
+	.section-1__main-description {
+		width: 240px;
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.section-2__content {
+		padding: 0 20px;
+	}
+	.section-2__title {
+		padding: 30px 0;
+		display: flex;
+	}
+	.section-2__sub-title {
+		padding: 0 30px;
+		font-size: 14px;
+	}
+	.section-2__description {
+	   	padding: 0 30px;
+	   	font-size: 14px;
+	}
+	.section-2__flying-molecule {
+	    width: 120px;
+	    height: 85px;
+	    top: -55px;
+	    left: -20px;
+	}
+
+.first-block__description {
+    width: 75%;
+    font-size: 14px;
+}
+.first-block__logo {
+	padding-top: 20px;
+}
+.second-block {
+	margin-top: 70px;
+	padding: 20px;
+	font-size: 16px;
+}
+.third-block {
+	flex-direction: column;
+	font-size: 18px;
+	padding: 20px 20px;
+	justify-content: center;
+}
+.third-block__title {
+	margin: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.third-block__logo {
+	margin: auto; 
+}
+.section-3__title {
+		margin-top: 50px;
+		width: 100%;
+		padding: 50px 20px;
+	}
+	.section-3__title-logo {
+		width: 163px;
+    	height: 15px;
+	}
+	.section-3__title-logo--company {
+	    width: 200px;
+    	height: 65px;
+    	margin-top: 20px;
+	}
+	.section-3__title-molecule1 {
+		width: 80px;
+	    height: 50px;
+		top: -21px;
+	    right: 0px;
+	}
+	.section-3__title-molecule2 {
+	    width: 120px;
+    	height: 80px;
+		top: 145px;
+    	right: -20px;
+	}
+	.section-3__title-molecule3 {
+		width: 80px;
+	    height: 60px;
+	    top: -32px;
+	    left: -22px;
+	}
+	.section-3__content {
+		margin-top: 50px;
+	}
+	.section-list__item {
+		display: flex;
+    	flex-direction: column;
+    	padding: 30px 0;
+    	span {
+    		width: 100%;
+    	}
+	}
+	.section-list__item-content {
+		padding-top: 10px;
+		padding-left: 36px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
